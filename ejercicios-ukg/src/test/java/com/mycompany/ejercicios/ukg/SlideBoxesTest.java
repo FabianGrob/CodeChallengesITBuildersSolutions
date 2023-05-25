@@ -4,6 +4,7 @@
  */
 package com.mycompany.ejercicios.ukg;
 
+import org.junit.Assert;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
@@ -51,7 +52,7 @@ public class SlideBoxesTest {
             {0, 0, 1, 1},
             {0, 1, 1, 1}
         };
-        assertEquals(result, expected);
+        Assert.assertArrayEquals(result, expected);
     }
 
     @Test
@@ -70,7 +71,7 @@ public class SlideBoxesTest {
             {0, 1, 1, 1},
             {1, 1, 1, 1}
         };
-        assertEquals(result, expected);
+        Assert.assertArrayEquals(result, expected);
     }
 
     @Test
@@ -89,6 +90,6 @@ public class SlideBoxesTest {
             {0, 0, 0, 0},
             {0, 1, 1, 1}
         };
-        assertEquals(result, expected);
+        Assert.assertArrayEquals(result, expected);
     }
 }
